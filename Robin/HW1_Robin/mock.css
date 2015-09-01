@@ -1,0 +1,72 @@
+body{
+	background:url("asset/page-mock.png") no-repeat;
+	background-size: 1024px 885px;
+	font-family: Verdana, sans-serif;
+
+}
+
+h1{
+	color: #666666;
+	font-weight: normal;
+	padding-top: 12px;
+	margin-left: 260px;
+	font-size:47px;
+	letter-spacing: 0.5px;
+}
+
+img{         
+	height:370px;     
+	width:370px;  
+}
+
+h2{
+	color:#f07c17;
+	font-weight: bold;
+}
+
+main{
+	margin-top: -26px;
+	margin-left: 30px;
+	width:558px;
+	float:left;
+}
+
+main p{
+	font-size: 16px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	line-height:32px; 
+}
+
+#secondP{
+	margin-top: -20px;
+}
+
+.sidebar{
+	width:375px;　
+	line-height:50px; 
+	padding-left: 33px;
+	float:left;
+}
+
+
+.features{
+	margin-top: 26px;
+	border-style:solid;
+	border-width: 1px;
+	border-color: #ccc;
+	height:222px;
+}
+
+.features h2{
+	padding:10px;
+	margin-left: 21px;
+}
+
+.list{ 
+	padding: 5px 71px;
+}
+
+.list li{
+	padding-bottom: 12px;
+}
