@@ -1,0 +1,92 @@
+<head>
+
+    <meta charset="UTF-8">
+    <title>jQuery Tab demo</title>
+    <style>
+        body,
+        html {
+            width: 100%;
+            height: 100%;
+            margin-top: 20px;
+            padding: 0;
+            background-size: cover;
+            text-align: center;
+            font-size: 1.5em;
+            font-family: Helvetica;
+        }
+        
+        ul {
+            margin: auto;
+            width: 50%;
+            height: auto;
+            padding-right: 15px;
+            border: 3px inset black;
+            border-radius: 2%;
+        }
+        
+        ul li {
+            display: inline;
+            float: left;
+            cursor: pointer;
+            padding: 0 10%;
+            border: 1px inset black;
+            border-top: none;
+            border-radius: 2%;
+            color: whitesmoke;
+            background-color: dimgray;
+        }
+        
+        li:first-child {
+            border-left: none;
+            margin-left: -40px;
+        }
+        
+        .active {
+            border-bottom: none;
+            pointer-events: none;
+            color: black;
+            background-color: white;
+        }
+        
+        #content {
+            text-align: justify;
+            color: darkslategrey;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js">
+    </script>
+</head>
+
+<body>
+    <h1> jQuery Tab</h1>
+    <div>
+        <ul id="unorderList">
+            <li class='active' id='firstTab'>1st</li>
+            <li id='secondTab'>2nd</li>
+            <li id='thirdTab'>3rd</li>
+            <br>
+            <br>
+            <div id="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+        </ul>
+    </div>
+    <script>
+        $(document).ready(function () {
+            $("li").click(function () {
+                $('li').removeClass('active');
+                $(this).addClass('active');
+                var idName = $(this).attr('id');
+                switch (idName) {
+                case 'firstTab':
+                    $('#content').text('Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.');
+                    break;
+                case 'secondTab':
+                    $('#content').text('showing SECOND tab. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ');
+                    break;
+                case 'thirdTab':
+                    $('#content').text('showing THIRD tab paragraph. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. ');
+                    break;
+                }
+            })
+        });
+    </script>
+</body>
