@@ -1,0 +1,60 @@
+body{
+	margin:0;
+    padding:15px;
+	font-family: 'Slabo 27px', serif;
+}
+
+.imgandname{
+    padding-bottom: 15px;
+    border-bottom: 1px dotted #aaa; 
+}
+
+h1, h2, h3{
+	color: #111;
+    font-family: 'Slabo 27px';
+    font-weight: normal;
+	font-size:3em;
+	letter-spacing: 0.5px;
+}
+
+h1{
+    font-size:3em;
+}
+
+h2{
+    font-size:2em;
+}
+
+h3{
+    font-size:2em;
+}
+
+.numDescript{
+    font-size:1.1em;
+    font-weight:500;
+    color:dimgray;
+}
+
+
+@media(min-width:1200px){
+    img.img-circle{max-width: 19%;}
+    .col-lg-2{
+        margin-right:-10%;
+    }
+    .col-lg-1{
+        margin-top: 5%;
+        margin-right:10%
+    }
+}
+
+h2.address{
+    padding-right:0%;
+    margin-left: 0 px;
+
+}
+
+ 
+h3{
+    padding-bottom: 15px;
+    border-bottom: 1px dotted #aaa;
+}

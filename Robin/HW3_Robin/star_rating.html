@@ -1,0 +1,69 @@
+<html>
+    <head>
+      
+        <style>      
+            body,
+            html {
+                width: 100%;
+                height: 100%; 
+                margin: 0;
+                padding: 0;
+                background-size:cover; 
+                text-align:center;
+                font-size: 1.5em;
+                font-family:Helvetica;
+            }
+ 
+            ul{
+                margin-left: -35px;
+            }
+            
+            li{ 
+                display: inline; 
+                color: darkgrey;
+                list-style-type: none;
+            }
+            
+            .highlight{
+                color:gold;
+                cursor:pointer;
+            }      
+            
+        </style>
+        
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"> </script>      
+        <script>
+            
+           $(document).ready(function() {
+              $("li").on("mouseenter",function(){
+                  $(this).addClass("highlight");
+                  $(this).prevAll().addClass("highlight");
+                  $(this).nextAll().removeClass("highlight");
+              });
+               
+              $("li").on("click",function(){
+                  var num = $(this).data('numstar');
+                  $("span").text(num);
+              }); 
+           });
+        
+        </script>
+    
+    </head>
+    
+<body>
+   
+    <div class="container">
+        <h1> 5 star rating jQuery implementation</h1>
+        <p>Rate <span id= "number"></span> Star</p>
+        <ul>
+          <li id= "first" data-numstar= '1'> ★ </li>
+          <li data-numstar= '2'> ★ </li>
+          <li data-numstar= '3'> ★ </li>
+          <li data-numstar= '4'> ★ </li>
+          <li id= "last" data-numstar= '5'> ★ </li>
+        </ul>
+    </div>
+</body>    
+</html>
