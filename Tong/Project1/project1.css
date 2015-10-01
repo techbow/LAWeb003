@@ -1,0 +1,136 @@
+body{
+	margin: 0px 0px;
+    font-family: Verdana, sans-serif;
+    background: url(page-mock.png);
+    background-size: 1024px 885px;
+    background-repeat: no-repeat
+}
+.wholepage{
+	
+	width: 940px;
+	height: 860px;
+	border: 0px solid black;
+	margin: 26px 27px 26px 27px;
+	padding: 0px 15px 0px 15px;
+}
+
+.header{
+	width: 970px;
+	height: 102px;
+	border: 0px solid black;
+	margin: 0px -15px 0px -15px;
+}
+
+.header h1{
+	width:970px;
+	height: 52px;
+	color: #666666;
+	font-size: 48px;
+	font-weight: 500;
+	font-family: inherit;
+	line-height:1.1;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom:30px;
+	padding-top: 20px;
+}
+
+
+.content{
+	width: 970px;
+	height: 758px;
+	border: 0px solid black;
+	margin: 0px -15px 0px -15px;
+
+	
+}
+
+.left{
+	list-style-type: none;
+	float: left;
+    width: 374.156px;
+	height: 628px;
+	border: 0px solid black;
+	padding: 0px 15px 0px 15px;
+	
+}
+
+.left img{
+	width:374px;
+	height:374px;
+	
+}
+
+.left-bottom{
+	margin-top: 30px;
+	width:312px;
+	height: 182px;
+	border: 1px solid #ccc;
+	padding: 10px 30px 30px 30px;
+
+}
+
+.left-bottom h2{
+	width:312px;
+	height:26px;
+	color: #f07c17;
+    font-size: 24px;
+    font-weight: bold;
+	margin:20px 0px 10px 0px;
+}
+
+ul{
+	color: #666666;
+    font-size: 16px;
+    line-height: 32px;
+    margin-top: 30px;
+}
+.right{
+	float: right;
+    width: 535.828px;
+	height: 758px;
+	border: 0px solid black;
+	padding: 0px 15px 0px 15px;
+	
+	
+}
+
+.right h2{
+	color: #f07c17;
+    font-size: 24px;
+    font-weight: bold;
+	margin-top:0px;
+	margin-bottom: 30px;
+	width: 535.828px;
+	height: 26px;
+}
+
+p.cls1{
+	color: #666666;
+    font-size: 16px;
+    line-height: 32px;
+	margin-bottom: 10px;
+	margin-top:0px;
+	width: 535.828px;
+	height: 256px;
+}
+
+p.cls2{
+	color: #666666;
+    font-size: 16px;
+    line-height: 32px;
+	margin-top:0px;
+	margin-bottom: 10px;
+	width: 535.828px;
+	height: 192px;
+}
+
+p.cls3{
+	color: #666666;
+    font-size: 16px;
+    line-height: 32px;
+	margin-top:0px;
+	margin-bottom: 10px;
+	width: 535.828px;
+	height: 224px;
+}

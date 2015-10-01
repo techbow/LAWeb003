@@ -1,0 +1,220 @@
+body{
+	width:950px;
+	height:1500px;
+	border:1px solid white;
+	margin:20px auto 0 auto;
+}
+.top img{
+
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    float: left;
+    margin-left:30px;
+    margin-top:50px;
+}
+
+.name{
+	width:200px;
+	height:100px;
+	margin-top:50px;
+	margin-left:10px;
+	border:0px solid black;
+	float:left;
+}
+
+.name h1{
+	text-align: center;
+}
+.name h2{
+	margin-top:-15px;
+	text-align: center;
+}
+
+.contact{
+	width:280px;
+	height:100px;
+	margin-top:50px;
+	margin-right:30px;
+	text-align: right;
+	float:right;
+	border:0px solid black;
+
+}
+
+.middle{
+	width:890px;
+	height:100px;
+	border:1px solid white;
+	margin-top: 250px;
+	margin-left: 30px;
+
+}
+
+.experience{
+	font-size:75px;
+	float:left;
+	margin-left: 10px;
+}
+
+.exp{
+	margin-top:26px;
+	float:left;
+	margin-left:5px;
+}
+
+.filed{
+	font-size: 75px;
+	float:left;
+	margin-left: 85px;
+}
+
+.fil{
+	margin-top: 26px;
+	float:left;
+	margin-left:5px;
+}
+
+.project{
+	font-size: 75px;
+	float:left;
+	margin-left: 85px;
+}
+
+.pro{
+	margin-top: 26px;
+	float:left;
+	margin-left:5px;
+}
+
+.publication{
+	font-size: 75px;
+	float:left;
+	margin-left: 88px;
+}
+
+.pub{
+	float:left;
+	margin-left:5px;
+	margin-top: 45px;
+}
+
+.left{
+	width:445px;
+	height:900px;
+	margin-left:31px;
+	margin-right:30px;
+	margin-top:20px;
+	border:1px solid white;
+	float:left;
+}
+
+.profile{
+	width:400px;
+	height:350px;
+	border:1px solid white;
+	margin-left: 22.5px;
+}
+.icon{
+	width:35px;
+	height:35px;
+	margin-top:5px;
+	margin-left:15px;
+	float:left;	
+}
+.iconDescription{
+	width:320px;
+	height:24px;
+	font-size:20px;
+	font-weight: bold;
+	border:1px solid white;
+	margin-top:12px;
+	margin-left:55px;
+}
+hr{
+	margin-top:-5px;
+	border-width: 2px;
+}
+
+.relatedPro{
+	width:400px;
+	height:500px;
+	border:1px solid white;
+	margin-left: 22.5px;
+}
+
+.circle{
+	width:25px;
+	height:25px;
+	margin-top:5px;
+	margin-left:10px;
+	float:left;	
+}
+
+.second{
+	width:400px;
+	height:100px;
+	border:1px solid white;
+	margin-top: -10px;
+}
+
+/*.third{
+	width:400px;
+	height:100px;
+	border:1px solid black;
+	margin-top: 20px;
+}*/
+ul.list{
+	list-style:none;
+}
+
+.title{
+	font-weight: bold;
+	margin-top:5px;
+}
+
+.year{
+	color: rgba(0, 0, 0, 0.53);
+}
+
+.right{
+	width:412px;
+	height:900px;
+	margin-top:20px;
+	border:1px solid white;
+	float:left;
+}
+
+.skills{
+	width:400px;
+	height:250px;
+	border:1px solid white;
+	margin-left: 10px;
+}
+
+.skillList{
+	font-size:20px;
+	margin-top: 4px;
+}
+
+.language{
+	width:400px;
+	height:150px;
+	border:1px solid white;
+	margin-left: 10px;
+}
+
+.certificates
+{
+	width:400px;
+	height:150px;
+	border:1px solid white;
+	margin-left: 10px;
+}
+
+.education{
+	width:400px;
+	height:300px;
+	border:1px solid white;
+	margin-left: 10px;
+}
