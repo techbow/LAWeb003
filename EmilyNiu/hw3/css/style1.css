@@ -1,0 +1,19 @@
+.content {
+	width: 500px;
+	margin: 50px auto;
+	font-family: Verdane;
+}
+
+li {
+	float: left;
+	width: 20px;
+	height: 20px;
+	margin: 2px;
+	display: inline;
+	color: #999;
+	font: bold 18px arial;
+	cursor: pointer;
+}
+.fillcolor {
+	color: #c10;
+}
