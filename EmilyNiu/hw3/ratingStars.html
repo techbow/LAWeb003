@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Rating Star System</title>
+	<link rel="stylesheet" href="css/style1.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+<body>
+	<div class="content">
+		Rating Star:
+		<span id="rating-result"></span>
+		<ul id="star">
+			<li class="fillcolor">★</li>
+			<li class="fillcolor">★</li>
+			<li class="fillcolor">★</li>
+			<li class="fillcolor">★</li>
+			<li class="fillcolor">★</li>
+		</ul>
+	</div>
+	<script>
+		$("ul").on("mouseover","li",function(){
+			$(this).prevAll().add($(this)).addClass("fillcolor");
+			$(this).nextAll().removeClass("fillcolor");
+		})
+
+		$("ul").on("click","li",function(){
+			var idx = $(this).index("li");
+			$("#rating-result").html(idx + 1);
+		})
+	</script>
+</body>
+</html>
