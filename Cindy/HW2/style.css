@@ -1,0 +1,104 @@
+body{
+	background-color: white;
+}
+
+h4{
+	line-height: 10%;
+}
+div{
+	border:0px solid;
+	margin-left: 20px;
+}
+.head{
+	width:100px;
+	height:100px;
+	display:inline-block;
+	border-radius: 50%;
+	overflow: hidden;
+	padding:0px;
+}
+.head img{
+	height:100px;
+	width:auto;
+}
+
+.title{
+	text-align:left;
+	vertical-align: top;
+	position:relative;
+	width:35%;
+	display:inline-block;
+	padding-top: 10px;
+	font-family: sans-serif;
+}
+.contact{
+	text-align:right;
+	vertical-align: top;
+	position:absolute;
+	width:45%;
+	display:inline-block;
+	padding-top: 15px;
+	float:right;
+}
+
+.quantity{
+	width:98%;
+	float:right;
+}
+
+.quantity td,.quantity p{
+	display:inline-block;
+	width:24%;
+}
+
+.number{
+	font-size:50px;
+}
+
+.unit{
+	text-transform:uppercase;
+}
+
+.experience, .experience tr{
+	width:98%;
+	float:left;
+	margin-right: 0 50px;
+}
+
+.experience td{
+	display:inline-block;
+	width:45%;	
+	vertical-align: top;
+}
+
+
+.right{
+	float:right;
+}
+
+h3{
+	font-family: "Poiret One", sans-serif;
+	text-transform: uppercase;
+	font-size:20px;
+	border-bottom:2px solid;
+}
+h4{
+	font-family: "Hard Times", serif;
+	text-transform: capitalize;
+	font-size:20px;
+	line-height: 0px;
+}
+.time{
+	line-height: 5px;
+	font-family: "arial", sans-serif;
+	color:gray;
+}
+.experience div{
+	margin-left: 20px;
+	margin-top:20px;
+}
+
+.experience p{
+	font-family:"arimo", sans-serif;
+}
+
