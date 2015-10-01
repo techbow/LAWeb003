@@ -1,0 +1,71 @@
+body {
+	background: url(../images/homework1_sample.png);
+	background-size: 1024px 885px;
+	background-repeat: no-repeat;
+	font-family: Verdana;
+}
+
+.container{
+	width: 970px;
+	margin:26px 27px;
+}
+
+.center {
+	font-family: Verdana;
+    width:940px;
+    height:60px;
+    text-align:center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.left {
+    width:370px;
+    float: left;
+    margin-left: 15px;
+    margin-right: 5px;
+    text-align:left; 
+}
+
+img {
+	width: 370px;
+	margin-top: 15px;
+}
+
+.box {
+	width: 370px;
+	border: 2px solid gray;
+	margin-top:20px;
+}
+
+.right {
+	width: 540px;
+	font-family: Verdana;
+    color:#666666;
+    float: left;
+    text-align:left;
+    margin-left: 15px;
+    margin-right: 5px; 
+}
+
+h1 {
+	font-size: 46px;
+	font-family: Verdana;
+	color: #666666;
+}
+
+h2 {
+	font-family: Verdana;
+	font-size: 28px;
+	color: #f07c17;
+	margin-top: 15px;
+	margin-left:15px;
+}
+
+p, li {
+	font-family: Verdana;
+	font-size: 16px;
+	color:#666666;
+	margin-left: 25px;
+	line-height: 26px;
+}
