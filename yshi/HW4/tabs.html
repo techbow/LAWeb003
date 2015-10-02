@@ -1,0 +1,68 @@
+<!doctype html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Three Tabs</title>
+		<style>
+			.main {
+				width: 500px;
+				margin: 200px auto;
+			}
+			.tabs {
+				padding-left: 0;
+			}
+			ul {
+				margin-bottom: 5px;
+			}
+			li {
+				padding: 5px;
+				display: inline;
+				cursor: pointer;
+			}
+			li.activeTab {
+				border: 1px black solid;
+				border-bottom: 1px white solid;
+			}
+			.content {
+				padding: 20px;
+				border: 1px black solid;
+				height: 300px;
+			}
+			.activeContent {
+				display: block;
+			}
+			.disabledContent {
+				display: none;
+			}
+		</style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	</head>
+	<body>
+		<div class="main">
+			<ul class="tabs">
+				<li class="activeTab">Tab A</li>
+				<li>Tab B</li>
+				<li>Tab C</li>
+			</ul>
+			<div class="content">
+				<div class="activeContent">This is the content for Tab A.</div>
+				<div class="disabledContent">This is the content for Tab B.</div>
+				<div class="disabledContent">This is the content for Tab C.</div>
+			</div>
+		</div>
+		<script>
+			$("ul").on("click", "li", function(){
+				// update active tab
+				$(".activeTab").removeClass("activeTab");
+				$(this).addClass("activeTab");
+				// update content
+				var index = $(this).index("li");
+				var prevActive = $(".activeContent");
+				prevActive.addClass("disabledContent");
+				prevActive.removeClass("activeContent");
+				var curActive = $(".content div");
+				curActive.eq(index).removeClass("disabledContent");
+				curActive.eq(index).addClass("activeContent");
+			})
+		</script>
+	</body>
+</html>

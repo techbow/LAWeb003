@@ -1,0 +1,47 @@
+<!doctype html>
+	<head>
+		<meta charset="UTF-8">
+		<title>My Rating</title>
+		<style>
+			.description {
+				font: 50px 'Oswald', sans-serif;
+				width: 400px;
+				margin: 200px auto;
+				padding: 10px 30px;
+			}
+			li {
+				display: inline;
+				color: #999;
+				cursor: pointer;
+			}
+			.selectedColor {
+				color: #c00
+			}
+		</style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+	</head>
+		<div class="description">
+			Rating Star:
+			<span id="ratingLevel"></span>
+			<ul id="stars">
+				<li>★</li>
+				<li>★</li>
+				<li>★</li>
+				<li>★</li>
+				<li>★</li>
+			</ul>
+		</div>
+		<script>
+			$("ul").on("mouseover", "li", function() { // attach event handler for mouseover event to li elements
+				$(this).prevAll().addClass("selectedColor");
+				$(this).addClass("selectedColor");
+				$(this).nextAll().removeClass("selectedColor");
+			})
+			$("ul").on("click", "li", function() { // attach event handler for click event to li elements
+				$("#ratingLevel").html($(this).index("li") + 1); // get the index of the clicked element relative to its sibling
+			})
+		</script>
+	<body>
+	</body>
+</html>
