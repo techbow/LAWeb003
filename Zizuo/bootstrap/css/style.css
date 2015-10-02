@@ -1,0 +1,28 @@
+.mediaQ {
+	background: red;
+}
+
+.text-primary {
+	color: red;
+}
+
+@media (max-width: 750px) {
+	.mediaQ {
+		background: green;
+	}
+}
+@media (min-width: 750px) and (max-width: 900px) {
+	.mediaQ {
+		background: blue;
+	}
+}
+@media (min-width: 900px) and (max-width: 1024px) {
+	.mediaQ {
+		background: yellow;
+	}
+}
+@media (min-width: 1024px) {
+	.mediaQ {
+		background: pink;
+	}
+}
