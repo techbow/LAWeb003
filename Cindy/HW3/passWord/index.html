@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				var array="";
+				$("#PassWord").keypress(function(e){
+					array+="*";
+        			$("#PassWord").val(array);	
+        			console.log(array);
+        			});
+			});
+		</script>
+	</head>
+
+
+	<body>
+		<h2>Login page</h2>
+
+		<form action="demo_form.asp">
+			Username: <input type="text" value=""><br>
+			Password: <input id="PassWord" type="text" value=""><br>
+			<input type="submit" value="Submit">
+		</form>
+	</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script>
+			$(document).ready(function(){
+				var rate=null;
+
+				$("li").on("mouseenter", function(){
+					$(this).addClass("yellow");
+					$(this).prevAll().addClass("yellow");
+					$(this).nextAll().addClass("black");
+				});
+
+				$("li").on("click", function(){
+					rate=$(this).index();
+				});
+			
+				console.log("the rate is" + rate);
+        		$("#Rating").append(rate);
+			});
+		</script>
+	</head>
+
+
+	<body>
+		<h2>What do you think of the course?</h2>
+
+		<form action="demo_form.asp">
+			<p> Your rating is <span id="Rating"> </span></p>
+			<ol id="Stars" >Rating: 
+				<li id="first"> &#9734;</li>
+				<li id="second"> &#9734;</li>
+				<li id="third"> &#9734;</li>
+				<li id="fourth"> &#9734;</li>
+				<li id="fifth"> &#9734;</li>
+			</ol><br>
+			<input type="submit" value="Submit">
+		</form>
+	</body>
+</html>

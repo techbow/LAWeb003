@@ -1,0 +1,16 @@
+ol li{
+	display:inline;
+	border-width:5 px;
+	border-style:solid;
+}
+
+p{
+	border-width:5 px;
+}
+
+.yellow{
+	color:red;
+}
+.black{
+	color:black;
+}
