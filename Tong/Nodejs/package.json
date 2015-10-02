@@ -1,0 +1,22 @@
+{
+  "name": "testapp",
+  "version": "1.0.0",
+  "description": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "test",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "null"
+  },
+  "keywords": [
+    "1234"
+  ],
+  "author": "tong",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}
