@@ -1,0 +1,89 @@
+body {
+  width: 980px;
+  height:800px;
+  background-image: url("../../images/bg.jpg");
+  margin-bottom:0;
+  padding-left: 500px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#page-title{
+	font-size: 50px;
+	margin-left:50px;
+}
+
+
+.item-new, .item{
+	width:400px;
+	overflow:hidden;
+	background-color: #C4C4C4;
+	border: 1px solid #eeeeee;
+	border-radius: 8px 8px 8px 8px;
+	padding: 10px 0 10px 10px;
+	margin-bottom:10px;
+}
+
+.input{
+	width:350px;
+	height:30px;
+	font-size:20px;
+	border-radius: 8px 8px 8px 8px;
+}
+
+.item-new .createButton{
+	margin-left:3px;
+	margin-bottom:-11px;
+	border-radius: 8px 8px 8px 8px;
+}
+
+.footer{
+	position: absolute;
+	bottom:30px;
+	margin-left:300px;
+	font-size:30px;
+}
+
+.display{
+	float:left;
+	margin-right:10px;
+	margin-top:10px;
+}
+
+.update-form{
+	display:inline;
+	float:left;
+}
+
+.update-input{
+	width:300px;
+	height:30px;
+	font-size:20px;
+	border-radius: 8px 8px 8px 8px;
+}
+.updateButton, .del-btn-edit{
+	display:block;
+	float:right;
+	margin-left:10px;
+	margin-top:3px;
+	border-radius: 8px 8px 8px 8px;
+}
+
+.del-btn-edit{
+	display:block;
+	float:right;
+	margin-right:13px;
+	margin-top:3px;
+	border-radius: 8px 8px 8px 8px;
+}
+
+.editButton, .trashButton, .completeButton{
+	display:inline;
+	float:right;
+	margin-right:5px;
+	border-radius: 8px 8px 8px 8px;
+}
+
