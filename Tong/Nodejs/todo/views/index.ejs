@@ -1,0 +1,38 @@
+<% layout( 'layout' ) -%>
+
+
+<h1 id="page-title"><%= title %></h1>
+
+	<div id="list">
+	  <form action="/create" method="post" accept-charset="utf-8">
+	    <div class="item-new">
+	      <input class="input" type="text" name="content" />
+	      <input type = "image" src="../../images/submitButton.png" alt = "Submit" class = "createButton"/>
+	    </div>
+	  </form>
+
+	<% todos.forEach( function ( todo ){ %>
+	  <div class="item-new">
+
+	  	<div class = "display"><%= todo.content %></div>
+
+		
+		<a class="del-btn" href="/destroy/<%= todo._id %>" title="Delete this todo item">
+			<img class = "trashButton" src="../../images/trashButton.png" />
+		</a>
+
+		<a class="update-link" href="/edit/<%= todo._id %>" title="Update this todo item">
+			<img class = "editButton" src="../../images/editButton.png" />
+		</a>
+
+		<a class="complete" href="/edit/<%= todo._id %>"
+        title="Completed">
+        <img class = "completeButton" src="../../images/completeButton.png"/>
+        </a>
+
+	  </div>
+
+	<% }); %>
+	</div>
+
+	
